@@ -4,8 +4,23 @@ comes from the name of the assignment, which was to adapt a Logo-esque turtles
 library into a simulation of organisms ("rabbits") consuming food (grass) in
 the turtle world.
 
-This project ignores most of the actual given assignment, and instead implements
+This project ignores most of the given assignment, and instead implements
 a genetic algorithm for rabbit survival. Turtles wander randomly and consume
 food at a constant rate. The selection function is starvation. When turtles have
 sufficient excess energy, they reproduce asexually. A turtle's offspring 
 receives a mutation of its own genes, and a percentage of its own stored energy.
+
+A turtle's genome consists of the following genes:
+
+- Appetite: The rate at which the turtle consumes food that it's standing on.
+
+- Reproduction: The amount of energy required for the turtle to create an 
+                offspring.
+
+- Reproduction Ratio: The percentage of the turtle's own energy that is given
+                      to the offspring.
+
+- Speed: The turtle's rate of travel. Turtles always move at a constant speed.
+
+- Lifetime: The maximum amount of time a turtle may live. When a turtle hits
+            its lifetime, it dies of "old age".
