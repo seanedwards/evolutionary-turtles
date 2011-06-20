@@ -1,0 +1,11 @@
+RabbitTurtles implements a genetic algorithm to simulate a simple life form 
+("rabbit turtles") in a world of limited resources. The name of the project
+comes from the name of the assignment, which was to adapt a Logo-esque turtles
+library into a simulation of organisms ("rabbits") consuming food (grass) in
+the turtle world.
+
+This project ignores most of the actual given assignment, and instead implements
+a genetic algorithm for rabbit survival. Turtles wander randomly and consume
+food at a constant rate. The selection function is starvation. When turtles have
+sufficient excess energy, they reproduce asexually. A turtle's offspring 
+receives a mutation of its own genes, and a percentage of its own stored energy.
